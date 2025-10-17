@@ -1,2 +1,9 @@
 guandrail/
 vllm_env/
+__pycache__/
+api_docs/__pycache__
+model/__pycache__
+route/__pycache__
+uploads/
+flask.log
+index.log
