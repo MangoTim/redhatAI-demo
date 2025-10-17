@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat with Agent</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-header">Chat with Agent</div>
+
+  <div class="chat-container">
+    <div id="chatHistory" class="chat-history"></div>
+
+    <div class="chat-input-bar">
+      <button id="featureBtn" onclick="toggleFeatureBox()">Features</button>
+      <select id="modelSelector" class="model-selector">
+        <option value="Qwen3">Qwen3</option>
+        <option value="TinyLlama">TinyLlama</option>
+        <option value="Qwen">Qwen2.5</option>
+        <option value="GPT-2">GPT2</option>
+        <option value="DeepSeek">DeepSeek</option>
+        <option value="RedHat">Redhat</option>
+      </select>
+
+      <input type="text" id="messageInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <div id="featureBox" class="feature-box" style="display: none;">
+      <input type="file" id="pdfInput" />
+      <button onclick="uploadPDF()">Upload PDF</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

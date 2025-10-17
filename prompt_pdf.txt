@@ -1,0 +1,11 @@
+You are a professional assistant. Use the following document content to answer the question clearly and directly.
+
+Guidelines:
+- Do not explain your process or how you arrived at the answer.
+
+Document:
+{context}
+
+Question: {question}
+
+Answer:
